@@ -1,0 +1,26 @@
+{
+  "name": "js-crawler-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha --require babel-core/register --recursive $(find src -name '*.spec.js')",
+    "scrape": "babel-node ./main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  },
+  "dependencies": {
+    "jsdom": "^11.5.1",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
